@@ -23,7 +23,9 @@
     "format:lint": "eslint ./src --ext .js",
     "format:prettier": "prettier --write \"src/**/*.js\"",
     "lint": "eslint \"{src,apps,libs,test}/**/*.jss\" --fix",
-    "format": "yarn format:prettier && yarn format:lint && yarn lint"
+    "format": "yarn format:prettier && yarn format:lint && yarn lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +50,7 @@
   },
   "devDependencies": {
     "eslint": "^8.20.0",
-    "eslint-plugin-react": "^7.30.1"
+    "eslint-plugin-react": "^7.30.1",
+    "gh-pages": "^4.0.0"
   }
 }
