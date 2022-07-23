@@ -3,20 +3,22 @@ Jednoduchý nakonfigurovaný template vhodný jako základ pro tvorbu nové Reac
 Projekt již má nainstalované některé dependencies jako eslint, prettier, browser router, etc... Všechny jsou vysvětleny v této dokumentaci.
 
 ## 1. Yarn package manager
-V tomto projektu je použit Yarn package manager, proto sis jej musíte jako první nainstalovat. Výhoda yarnu je v tom, že narozdíl od npm instaluje dependies paralelně, tedy instaluje jich více najednou a proto je rychlejší. Zároveň podporuje drtivou většinu knihoven, které jsou dostupné pro npm.
+V tomto projektu je použit Yarn package manager, proto sis jej musíte jako první nainstalovat. Výhoda yarnu je v tom, že na rozdíl od npm instaluje dependies paralelně, tedy instaluje jich více najednou a proto je rychlejší. Zároveň podporuje drtivou většinu knihoven, které jsou dostupné pro npm.
 #### Instalace yarn
 script: `npm install --global yarn`
 ### Instalace dependencies
 script: `yarn`
+POZOR! ne npm yarn, pouze `yarn`
 ### Spuštění applikace
 script: `yarn start`
+POZOR! ne npm yarn, pouze `yarn`
 
 ## 2. Auto-Formatting
-tento projekt má nastaveno automatické formatování a kontrolu syntaxe pomocí knihoven Eslint a Prettier. Pravidla tohoto formátování najdete v souborech .eslintrc.js a .prettierrc a můžete si je měnit podle vašich potřeb. Obě knihovny mají na internetu pěkně napsanou dokumentaci ye které můžete čerpat.
+tento projekt má nastaveno automatické formátování a kontrolu syntaxe pomocí knihoven Eslint a Prettier. Pravidla tohoto formátování najdete v souborech .eslintrc.js a .prettierrc a můžete si je měnit podle vašich potřeb. Obě knihovny mají na internetu pěkně napsanou dokumentaci ye které můžete čerpat.
 eslint: https://eslint.org/docs/latest/rules/
 prettier: https://prettier.io/docs/en/options.html
 ### Nastavení auto-formátu při uložení
-1. intalace eslint rozšíření
+1. instalace eslint rozšíření
 2. instalace prettier rozšíření
 3. VSCode settings => Editor: Format On Save zaškrtnout
 4. VSCode settings => Eslint>Format:Enable zaškrtnout
@@ -25,7 +27,7 @@ Formátování při ukládání upraví pouze soubor, který ukládáte. Ani př
 
 ## 3. Folder system
 Pro lepší přehlednost doporučují naučit se používat nějaký Vám vyhovující folder system. Zde je malá ukázka toho, co se osvědčilo mě.
-Assets = složka obsahující vaše soubory (fotky, videa, textove soubory, pdf, atd...)
+Assets = složka obsahující vaše soubory (fotky, videa, textové soubory, pdf, atd...)
 Components = jednotlivé prvky, které v rámci vaší aplikace používate ( tlačítka, galerie, atd...)
 Layout = složka obsahující opakující se na každé stránce (navbar, footer, sidebar, atd...)
 Pages = soubory s kompletními stránkami na které se pomocí navigace přesměrováváte
@@ -41,7 +43,7 @@ Code-Splitting při buildění applikace rozsekat náš program na menší čás
 více zde: https://reactjs.org/docs/code-splitting.html
 
 ## 6. Styled-components
-V tomto projektu jsou nainstalováný styled-components, což je knihovná která Vám pomáhá výtvářet vaše vlastní nastylované komponenty. Dostanete tak stejné funkčnost jako nabízí například Sass, ale snadnější práci. Styled-components se například defaultně renderují pouze pokud jsou potřeba. Podporují TypeScript. Můžete do styled-componentů posílat props a tím měnit vzhled vašich komponentů. Je snadnější je opakovaně používat. Přehlednější naming convention. 
+V tomto projektu jsou nainstalovány styled-components, což je knihovna která Vám pomáhá vytvářet vaše vlastní nastylované komponenty. Dostanete tak stejné funkčnost jako nabízí například Sass, ale snadnější práci. Styled-components se například defaultně renderují pouze pokud jsou potřeba. Podporují TypeScript. Můžete do styled-componentů posílat props a tím měnit vzhled vašich komponentů. Je snadnější je opakovaně používat. Přehlednější naming convention. 
 více zde: https://styled-components.com/docs
 
 # Další užitečné odkazy
