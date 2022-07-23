@@ -11,7 +11,6 @@ script: `yarn`
 POZOR! ne npm yarn, pouze `yarn`
 ### Spuštění applikace
 script: `yarn start`
-POZOR! ne npm yarn, pouze `yarn`
 
 ## 2. Auto-Formatting
 tento projekt má nastaveno automatické formátování a kontrolu syntaxe pomocí knihoven Eslint a Prettier. Pravidla tohoto formátování najdete v souborech .eslintrc.js a .prettierrc a můžete si je měnit podle vašich potřeb. Obě knihovny mají na internetu pěkně napsanou dokumentaci ye které můžete čerpat.
